@@ -1,4 +1,4 @@
-package com.google.www.library;
+package com.project.course.bookstore;
 
 import org.junit.Test;
 

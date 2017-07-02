@@ -1,4 +1,4 @@
-package com.google.www.library;
+package com.project.course.bookstore;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.google.www.library", appContext.getPackageName());
+        assertEquals("com.project.course.bookstore", appContext.getPackageName());
     }
 }

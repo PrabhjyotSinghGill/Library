@@ -1,0 +1,63 @@
+{
+  "authors" : {
+    "9001" : {
+      "image" : "https://images-na.ssl-images-amazon.com/images/I/51Rmbpdgh3L._SY200_.gif",
+      "name" : "Dr. Seuss"
+    },
+    "9002" : {
+      "image" : "https://images-na.ssl-images-amazon.com/images/I/81UDbiE9yjL._UX250_.jpg",
+      "name" : "Jen Sincero"
+    },
+    "9003" : {
+      "image" : "https://images-na.ssl-images-amazon.com/images/I/71UOXdVXGNL._SY200_.jpg",
+      "name" : "Mark Manson"
+    }
+  },
+  "books" : {
+    "1001" : {
+      "author_id" : 9001,
+      "category" : [ "Children Book" ],
+      "cover" : "https://images-na.ssl-images-amazon.com/images/I/518eq5NjZkL._SX359_BO1,204,203,200_.jpg",
+      "date" : "January 22, 1990",
+      "publisher" : "Random House",
+      "quantity" : 35,
+      "shipToCanada" : false,
+      "shipToUSA" : true,
+      "title" : "Oh, the Places You'll Go!"
+    },
+    "1002" : {
+      "author_id" : 9001,
+      "category" : [ "Children Book" ],
+      "cover" : "https://images-na.ssl-images-amazon.com/images/I/51CLjXLbIzL._SY496_BO1,204,203,200_.jpg",
+      "date" : "January 27, 2009",
+      "publisher" : "Random House",
+      "quantity" : 0,
+      "shipToCanada" : true,
+      "shipToUSA" : true,
+      "title" : "Dr. Seuss's Happy Birthday, Baby!"
+    },
+    "1003" : {
+      "author_id" : 9002,
+      "category" : [ "Self-Help", "Personal Growth", "Nonfiction" ],
+      "cover" : "https://images-na.ssl-images-amazon.com/images/I/51KTckqNeKL._SX316_BO1,204,203,200_.jpg",
+      "date" : "April 23, 2013",
+      "publisher" : "Running Press",
+      "quantity" : 0,
+      "shipToCanada" : true,
+      "shipToUSA" : false,
+      "title" : "You Are a Badass: How to Stop Doubting Your Greatness and Start Living an Awesome Life"
+    },
+    "1004" : {
+      "author_id" : 9003,
+      "category" : [ "Nonfiction", "Self-Help", "Personal Growth", "Psychology", "Philosophy" ],
+      "cover" : "https://images-na.ssl-images-amazon.com/images/I/51C2AkS3QdL._SX332_BO1,204,203,200_.jpg",
+      "date" : "September 13, 2016",
+      "publisher" : "Running Press",
+      "quantity" : 3,
+      "shipToCanada" : true,
+      "shipToUSA" : true,
+      "title" : "The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life"
+    }
+  },
+  "category" : [ "Nonfiction", "Self-Help", "Personal Growth", "Psychology", "Philosophy", "Children Book" ]
+}

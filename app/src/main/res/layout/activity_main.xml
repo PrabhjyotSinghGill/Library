@@ -1,10 +1,10 @@
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.google.www.library.MainActivity">
+    android:background="@android:color/white"
+    tools:context="com.project.course.bookstore.MainActivity">
+
     <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
         android:hint="Enter Book Name"
         android:padding="5dp"
         android:layout_marginTop="60dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="10dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"/>
 
@@ -38,56 +38,146 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
             android:layout_weight="1"
-            android:background="@android:color/holo_red_dark"
-            android:padding="10dp"
             android:text="Read"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@color/google_red"
+            android:padding="10dp"
             android:textAllCaps="true"
             android:textColor="@android:color/white"
-            android:textSize="20sp" />
-
+            android:textSize="20sp"/>
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
             android:layout_weight="1"
-            android:background="@android:color/holo_orange_light"
-            android:padding="10dp"
             android:text="Buy"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@color/google_yellow"
+            android:padding="10dp"
             android:textAllCaps="true"
             android:textColor="@android:color/white"
-            android:textSize="20sp" />
-
+            android:textSize="20sp"/>
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Loan"
             android:layout_marginLeft="2dp"
             android:layout_marginRight="2dp"
-            android:layout_weight="1"
-            android:background="@android:color/holo_green_dark"
+            android:background="@color/google_green"
             android:padding="10dp"
-            android:text="Loan"
             android:textAllCaps="true"
             android:textColor="@android:color/white"
-            android:textSize="20sp" />
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_categories"
+        android:layout_below="@id/search_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <CheckBox
+                android:id="@+id/checkbox_nonfiction"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Non Fiction" />
+
+
+            <CheckBox
+                android:id="@+id/checkbox_self_help"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textColor="@android:color/black"
+                android:text="Self-Help"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <CheckBox
+                android:id="@+id/checkbox_personal_growth"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textColor="@android:color/black"
+                android:text="Personal Growth"/>
+
+            <CheckBox
+                android:id="@+id/checkbox_psycology"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textColor="@android:color/black"
+                android:text="Psycology"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <CheckBox
+                android:id="@+id/checkbox_philosophy"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textColor="@android:color/black"
+                android:text="Philosophy"/>
+
+            <CheckBox
+                android:id="@+id/checkbox_children_book"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textColor="@android:color/black"
+                android:text="Children Book"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 
     <Button
+        android:id="@+id/button_search"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/search_edit_text"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:background="@android:color/holo_blue_light"
-        android:padding="10dp"
         android:text="Search"
-        android:textAllCaps="true"
         android:textColor="@android:color/white"
+        android:textStyle="bold"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:background="@color/google_blue"
+        android:padding="10dp"
+        android:textAllCaps="true" />
+
 
 </RelativeLayout>
